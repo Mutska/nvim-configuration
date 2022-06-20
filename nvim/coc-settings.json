@@ -10,7 +10,5 @@
                 }
             }
         }
-    },
-    "prettier.tabWidth": 4,
-	"html.autoClosingTags":false
+    }
 }

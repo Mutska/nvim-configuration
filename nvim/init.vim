@@ -26,10 +26,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'pseewald/anyfold'
 Plug 'mg979/vim-visual-multi', {'branch' : 'master'}
 Plug 'voldikss/vim-floaterm'
+Plug 'SirVer/ultisnips'
 
-" Plug 'preservim/nerdtree'
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
- 
 " Icons
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
@@ -44,6 +42,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'fhill2/telescope-ultisnips.nvim'
 
 " Plug 'Yggdroot/indentLine'
 
@@ -148,6 +147,11 @@ vnoremap <silent> <A-h> :MoveHBlock(-1)<CR>
 " or
 " set foldlevel=99 " open all folds
 
+" ********** ultisnip Config **********
+let g:UltiSnipsExpandTrigger="<c-p>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 
 " ********** vim-visual-multi Config **********
 let g:VM_maps = {}
@@ -179,6 +183,8 @@ nnoremap <leader>cd <cmd>Telescope zoxide list<cr>
 
 " file_browser:
 nnoremap <leader>fb <cmd>Telescope  file_browser<cr>
+" UltiSnips:
+nnoremap <leader>fv <cmd>Telescope  ultisnips<cr>
 
 " Check Jetbrains Mono or Fira Code Fonts for ligatures support with Aur
 " Alacritty-ligatures packages or other terminal like kitty also

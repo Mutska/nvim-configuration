@@ -1,0 +1,57 @@
+snippet blah "Testing"
+class ${1:className} {
+	public:
+		$1(${2:args});
+		$3
+};
+endsnippet
+
+snippet incc
+
+#include <${1:iostream}>
+
+endsnippet
+
+## Main
+# main
+snippet main
+
+int main(int argc, char *argv[]) {
+
+	${0}
+
+	return 0;
+}
+endsnippet
+
+## Iteration
+# for i
+snippet fori "classic for"
+
+for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	${4}
+}
+
+endsnippet
+# foreach
+snippet fore "foreach for"
+
+for (${1:auto} ${2:i} : ${3:container}) {
+	${4}
+}
+endsnippet
+
+
+## Input/Output
+
+snippet cout "output"
+
+std::cout << ${1} << std::endl;
+
+endsnippet
+
+snippet  cin "input"
+
+std::cin >> ${1};
+
+endsnippet
