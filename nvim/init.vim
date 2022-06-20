@@ -115,6 +115,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 
+" ********** Lazygit Config **********
+nnoremap <leader>g :FloatermNew lazygit<CR> 
 
 " ********** vim-rainbow Config **********
 let g:rainbow_active = 1
